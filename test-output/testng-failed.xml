@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="SeleniumTestGroup.SeleniumFrameworkDesign.TestComponent.Listeners"/>
+  </listeners>
+  <test parallel="tests" name="Error Validation(failed)">
+    <classes>
+      <class name="SeleniumTestGroup.SeleniumFrameworkDesign.EcommerceSA2Framework">
+        <methods>
+          <include name="tearDown"/>
+          <include name="launchApplication"/>
+        </methods>
+      </class> <!-- SeleniumTestGroup.SeleniumFrameworkDesign.EcommerceSA2Framework -->
+      <class name="SeleniumTestGroup.SeleniumFrameworkDesign.ErrorValidation">
+        <methods>
+          <include name="loginErrorValidation"/>
+          <include name="tearDown"/>
+          <include name="launchApplication"/>
+        </methods>
+      </class> <!-- SeleniumTestGroup.SeleniumFrameworkDesign.ErrorValidation -->
+    </classes>
+  </test> <!-- Error Validation(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Submit Order Test</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi_attn">2</td><td class="numi">22.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">Error Validation</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">22.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="total"><td>Total</td>
+<td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi_attn">4</td><td class="numi">22.2 seconds</td><td colspan="2">&nbsp;</td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Submit Order Test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="2">SeleniumTestGroup.SeleniumFrameworkDesign.EcommerceSA2Framework</td><td><a href="#m1"><b>submitOrderTest</b> (Purchase) </a></td><td class="numi">2</td><td>1694081328276</td><td class="numi">8906</td></tr><tr class="failedodd"><td><a href="#m2"><b>submitOrderTest</b> (Purchase) </a></td><td class="numi">2</td><td>1694081328276</td><td class="numi">8906</td></tr>
+<tr><th colspan="4">Submit Order Test &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="1">SeleniumTestGroup.SeleniumFrameworkDesign.EcommerceSA2Framework</td><td><a href="#m3"><b>OrderHistoryTest</b>  </a></td><td class="numi">1</td><td>1694081337525</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Error Validation &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="2">SeleniumTestGroup.SeleniumFrameworkDesign.ErrorValidation</td><td><a href="#m4"><b>ProductValidation</b>  </a></td><td class="numi">1</td><td>1694081328157</td><td class="numi">1520</td></tr><tr class="failedodd"><td><a href="#m5"><b>loginErrorValidation</b>  </a></td><td class="numi">1</td><td>1694081335321</td><td class="numi">1861</td></tr>
+</table>
+<h1>Submit Order Test</h1>
+<h2 id="m1">SeleniumTestGroup.SeleniumFrameworkDesign.EcommerceSA2Framework:submitOrderTest</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{product=ADIDAS ORIGINAL, pass=Iamking@000, email=rahulshetty@gmail.com}</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>element click intercepted: Element is not clickable at point (387, 674)
+  (Session info: headless chrome=116.0.5845.141)
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ed817498fa0d178d44642aa570c816e6, clickElement {id=5A7AFF66115B3D7C541F87A263679865_element_12}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.141, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\SUMIT~1.SIN\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59878}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59878/devtoo..., se:cdpVersion: 116.0.5845.141, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (ed817498fa0d178d44642aa570c816e6)] -&gt; id: login]
+Session ID: ed817498fa0d178d44642aa570c816e6</p>
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+<br/>at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+<br/>at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+<br/>at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+<br/>at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+<br/>at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+<br/>at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+<br/>at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br/>at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+<br/>at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+<br/>at SeleniumTestGroup.pageobject.LandingPage.webLogin(LandingPage.java:35)
+<br/>at SeleniumTestGroup.SeleniumFrameworkDesign.EcommerceSA2Framework.submitOrderTest(EcommerceSA2Framework.java:38)
+<br/>21 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">SeleniumTestGroup.SeleniumFrameworkDesign.EcommerceSA2Framework:submitOrderTest</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{product=ZARA COAT 3, pass=Sumit123!, email=sumitsingh@gmail.com}</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>element click intercepted: Element is not clickable at point (387, 673)
+  (Session info: headless chrome=116.0.5845.141)
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c159a73084c07d422bc6dddf2323dd55, clickElement {id=62F7E1D13F6C37A6EE87FBA0EAEB4440_element_12}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.141, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\SUMIT~1.SIN\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59838}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59838/devtoo..., se:cdpVersion: 116.0.5845.141, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (c159a73084c07d422bc6dddf2323dd55)] -&gt; id: login]
+Session ID: c159a73084c07d422bc6dddf2323dd55</p>
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+<br/>at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+<br/>at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+<br/>at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+<br/>at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+<br/>at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+<br/>at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+<br/>at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br/>at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+<br/>at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+<br/>at SeleniumTestGroup.pageobject.LandingPage.webLogin(LandingPage.java:35)
+<br/>at SeleniumTestGroup.SeleniumFrameworkDesign.EcommerceSA2Framework.submitOrderTest(EcommerceSA2Framework.java:38)
+<br/>21 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">SeleniumTestGroup.SeleniumFrameworkDesign.EcommerceSA2Framework:OrderHistoryTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Error Validation</h1>
+<h2 id="m4">SeleniumTestGroup.SeleniumFrameworkDesign.ErrorValidation:ProductValidation</h2>
+<div style="padding-left:3em">
+<p>element click intercepted: Element is not clickable at point (387, 677)
+  (Session info: headless chrome=116.0.5845.141)
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [61a6f9b6d77a89a685bc1be1e929da6c, clickElement {id=79A1BF45EE603EAAEC6F0DFD8068F1F1_element_12}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.141, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\SUMIT~1.SIN\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59837}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59837/devtoo..., se:cdpVersion: 116.0.5845.141, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (61a6f9b6d77a89a685bc1be1e929da6c)] -&gt; id: login]
+Session ID: 61a6f9b6d77a89a685bc1be1e929da6c</p>
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+<br/>at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+<br/>at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+<br/>at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+<br/>at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+<br/>at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+<br/>at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+<br/>at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br/>at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+<br/>at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+<br/>at SeleniumTestGroup.pageobject.LandingPage.webLogin(LandingPage.java:35)
+<br/>at SeleniumTestGroup.SeleniumFrameworkDesign.ErrorValidation.ProductValidation(ErrorValidation.java:38)
+<br/>21 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">SeleniumTestGroup.SeleniumFrameworkDesign.ErrorValidation:loginErrorValidation</h2>
+<div style="padding-left:3em">
+<p>element click intercepted: Element is not clickable at point (387, 674)
+  (Session info: headless chrome=116.0.5845.141)
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [06548311d8366411753196a10e10e135, clickElement {id=521E54B04043702BE4906F609D7DAFAA_element_12}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.141, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\SUMIT~1.SIN\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59879}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59879/devtoo..., se:cdpVersion: 116.0.5845.141, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (06548311d8366411753196a10e10e135)] -&gt; id: login]
+Session ID: 06548311d8366411753196a10e10e135</p>
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+<br/>at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+<br/>at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+<br/>at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+<br/>at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+<br/>at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+<br/>at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+<br/>at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br/>at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+<br/>at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+<br/>at SeleniumTestGroup.pageobject.LandingPage.webLogin(LandingPage.java:35)
+<br/>at SeleniumTestGroup.SeleniumFrameworkDesign.ErrorValidation.loginErrorValidation(ErrorValidation.java:29)
+<br/>21 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>
